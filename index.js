@@ -292,8 +292,8 @@ app.delete("/publication-delete/:id", async (req,res) => {
     return res.json({publicationdeleted: deletePublication, message: "Publication was Deleted !!!"}); 
 });
 
+const PORT=process.env.PORT || 3000;
 
-
-app.listen(3000,() => {
+app.listen(PORT,() => {
     console.log("My express app is running.....")
 })
